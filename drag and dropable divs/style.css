@@ -1,0 +1,94 @@
+:root {
+    --background:#EDEEF7;
+    --gray:#EDEEF7;
+    --white:#ffff;
+    --shadow-opacity:0.30;
+    --blur:10px;
+
+}
+
+body{
+    font-size: 1rem;
+    background-image: url("./people-generating-images-using-artificial-intelligence-laptop.jpg");
+    background-size: cover;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#team-members {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    padding: 50px;
+    background: rgba(225, 225, 225, 0.25);
+    -webkit-backdrop-filter: blur(var(--blur));
+        backdrop-filter: var(--blur);
+        border-radius: 10px;
+        border: 1px solid rgba(225, 225, 225, 0.08);
+        filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, var(--shadow-opacity)) );
+}
+
+.team-member{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    min-height: 60px;
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 24px;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.team-member:hover{
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.team-member-avatar {
+    width: 3.7rem;
+    height: 3.75rem;
+    -o-object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-member-name{
+    display: grid;
+    gap: 0.125rem;
+
+}
+
+.team-member-name h3{
+    font-size: large;
+}
+
+.team-member-name p{
+    font-size: smaller;
+}
+
+.team-member-drag{
+    opacity: 0;
+
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    margin-left: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.social-links i {
+    width: 1.25rem;
+    height: 1.25rem;
+    font-size: 1.25rem;
+    /* border: 3px solid red; */
+}
